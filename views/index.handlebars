@@ -1,0 +1,31 @@
+<section class="py-2">
+	<div class="row">
+		<div class="col-md-6 text-center">
+			<h1 class="display-3 mt-3 pt-5">
+				Web Development E Book
+			</h1>
+			<p class="lead">Learn Development Front To Back</p>
+			<form action="/charge" method="POST">
+		  <script
+		    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+		    data-key="{{stripePublishableKey}}"
+		    data-amount="2500"
+		    data-name="Web Development E Book"
+		    data-description="E Book Written by Andy Nguyen"
+		    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+		    data-locale="auto">
+		  </script>
+			<script>
+				//Hide Stripe default
+				document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+			</script>
+			<button type="submit" class="btn btn-outline-dark text-white btn-lg">
+				Purchase for $25.00
+			</button>
+		</form>
+		</div>
+		<div class="col-md-6 mt-5">
+			<img  style="border: 2px solid white" src="http://i.telegraph.co.uk/multimedia/archive/02616/kindlepaperwhite_2616031b.jpg" class="img-fluid" alt="">
+		</div>
+	</div>
+</section>

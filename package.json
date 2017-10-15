@@ -1,0 +1,18 @@
+{
+  "name": "stipeseller",
+  "version": "1.0.0",
+  "description": "Sell books",
+  "main": "app.js",
+	"scripts": {
+		"start": "node app.js"
+	},
+  "repository": "https://github.com/Andyt-Nguyen/stripe-api.git",
+  "author": "Andrew Ty Nguyen <andyt.nguyen123@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "stripe": "^5.1.1"
+  }
+}
